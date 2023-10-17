@@ -1,0 +1,9 @@
+$main_color: #006fee;
+$color_white: #ffffff;
+$color_black: #000000;
+
+@mixin flex_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

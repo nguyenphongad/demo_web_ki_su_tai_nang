@@ -1,0 +1,66 @@
+.container__app {
+    // background-color: rgb(106, 80, 80);
+    .box_layout_body {
+        height: auto;
+        .tr_line_flex {
+            display: flex;
+        }
+        .layout_menu {
+        }
+        .layout_body {
+            width: 100%;
+        }
+    }
+}
+.container__menu {
+    width: 250px;
+    background-color: #fbfbfb;
+    .wrap__menu {
+        padding: 20px 0px;
+        .flex__box {
+            display: flex;
+            flex-direction: column;
+            .item_menu_a {
+                justify-content: left;
+                padding: 15px 0px;
+                color: $color_black;
+                font-weight: 500;
+                font-size: 17px;
+                cursor: pointer;
+                border-radius: 30px;
+                margin: 0px 10px;
+                @include flex_center;
+                justify-content: left;
+
+                > svg {
+                    margin-right: 15px;
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+            }
+            .box_sub_menu_item {
+                background-color: rgb(192, 192, 231);
+                overflow: hidden;
+                animation: animation_menu_sub 1s forwards;
+                @keyframes animation_menu_sub {
+                    from{
+                        height: 200px;
+                    }
+                    to{
+                        height: 10px;
+                    }
+                }
+                .sub_menu_item {
+                    display: block;
+                    padding: 10px 20px;
+                }
+            }
+            .item_menu_a.active {
+                background-color: #cecece;
+            }
+            .sub_menu_item.active {
+                background-color: red;
+            }
+        }
+    }
+}
