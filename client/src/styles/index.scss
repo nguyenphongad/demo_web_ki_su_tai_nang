@@ -1,17 +1,21 @@
 @import "@mixin_variable.scss";
-*{
+
+* {
     box-sizing: border-box;
-    font-family: -apple-system,Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    font-family: -apple-system, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
     background-color: $color_white;
 }
-a{
+
+a {
     text-decoration: none
 }
 
 
 @import "component";
 @import "pages";
+@import "pageNews";
