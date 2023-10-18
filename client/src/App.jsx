@@ -5,7 +5,7 @@ import MainRoute from "./config/routes/MainRoute";
 
 const App = () => {
 
-  const AUTHENCATION = true
+  const AUTHENCATION = false
 
   return (
     <div className="container__app">
