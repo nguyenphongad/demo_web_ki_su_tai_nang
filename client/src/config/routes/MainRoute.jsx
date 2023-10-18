@@ -9,18 +9,19 @@ import Achievements from '../../pages/PageStudy/Achievements'
 import StudyPlans from '../../pages/PageStudy/StudyPlans'
 import PageNews from '../../pages/PageNews/PageNews'
 import PageMessenger from '../../pages/PageMessenger/PageMessenger'
+import LayoutNotFound from '../../pages/PageNotFound/LayoutNotFound'
 
 const MainRoute = () => {
     return (
         <>
             <Routes>
-                <Route path="/login" element={<LayoutLogin />} />
 
                 <Route path="/" index element={<PageHome />} />
                 <Route path="/home" element={<Navigate to="/" replace={true} />} />
 
                 <Route path="/news" element={<PageNews />} />
                 <Route path="/messenger" element={<PageMessenger />} />
+                <Route path="*" element={<LayoutNotFound />} />
 
                 {/* <Route path="/study/:id" element={<PlanProgress/>}> */}
 

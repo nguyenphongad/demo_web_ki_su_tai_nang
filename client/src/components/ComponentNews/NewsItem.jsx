@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+import React from 'react'
 export const NewsItem = ({ children }) => {
 	const time = new Date(children.time)
 	const day = time.getDate()
