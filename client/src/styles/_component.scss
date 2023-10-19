@@ -1,20 +1,24 @@
 .container__app {
+
     // background-color: rgb(106, 80, 80);
     .box_layout_body {
         height: auto;
+
         .tr_line_flex {
             display: flex;
         }
+
         .layout_menu {
             position: relative;
         }
+
         .layout_body {
             width: 100%;
-            padding: 60px ;
-            padding-left: 265px;
+            padding: 60px 0px 0px 258px;
         }
     }
 }
+
 .container__header {
     width: 100%;
     height: 60px;
@@ -24,13 +28,17 @@
     background-color: $color_white;
     border-bottom: 1px solid #a8a8a8;
     z-index: 10;
+
     .tr__header {
         padding: 5px 20px;
+
         .flex__line {
             display: flex;
             justify-content: space-between;
+
             .box__logo {
                 width: 105px;
+
                 .image_logo {
                     width: 100%;
                 }
@@ -47,11 +55,14 @@
     border-right: 1px solid #b6b6b6;
     position: fixed;
     left: 0px;
+
     .wrap__menu {
+
         // padding: 20px 0px;
         .flex__box {
             display: flex;
             flex-direction: column;
+
             .item_menu_a {
                 justify-content: left;
                 padding: 12px 15px;
@@ -67,7 +78,8 @@
                 transition: all 0.35s;
                 margin: 5px 10px;
                 color: #383838;
-                > span {
+
+                >span {
                     @include flex_center;
                 }
 
@@ -76,26 +88,33 @@
                     margin-left: 10px;
                     font-size: 20px;
                 }
+
                 .icon_active_sub {
                     color: #797878;
                     transition: transform 0.4s;
                 }
+
                 .active_icon {
                     transform: rotate(90deg);
-                    > svg {
+
+                    >svg {
                         color: $color_black !important;
                     }
                 }
+
                 .unactive_icon {
                     transform: rotate(0deg);
                 }
+
                 &:hover {
                     background-color: $color_white_hover;
                 }
             }
+
             .box_sub_menu_item {
                 overflow: hidden;
                 transition: height 0.25s;
+
                 .sub_menu_item {
                     display: block;
                     background-color: #f7f7f7;
@@ -107,15 +126,18 @@
                     transition: all 0.35s;
                     border-bottom: 1px solid #ececec;
                     color: #494949;
+
                     &:hover {
                         background-color: #dadada;
                     }
                 }
+
                 .sub_menu_item.active {
                     background-color: #dfdfdf;
                     color: $color_black;
                 }
             }
+
             .item_menu_a.active {
                 background-color: $color_white_hover;
                 color: $color_black;
@@ -126,19 +148,21 @@
 }
 
 .component__input {
-    > label {
+    >label {
         font-size: 18px;
         font-weight: 500;
         color: #282c52;
         display: block;
     }
+
     .line__input {
         position: relative;
         height: 45px;
         margin: 5px 0px;
         border: 1px solid #cecece;
         border-radius: 5px;
-        > input {
+
+        >input {
             width: 100%;
             height: 100%;
             border-radius: 5px;
@@ -149,13 +173,15 @@
             padding-left: 10px;
             padding-right: 40px;
         }
+
         .icon__before {
             height: 100%;
             position: absolute;
             top: 0px;
             right: 0px;
             @include flex_center;
-            > svg {
+
+            >svg {
                 font-size: 25px;
                 color: #282c52;
                 margin: 0px 5px;
@@ -164,17 +190,22 @@
         }
     }
 }
+
 .tr__line--capcha {
     display: flex;
     width: 100%;
-    > div:first-child {
+
+    >div:first-child {
         flex: 3;
     }
-    > div:last-child {
+
+    >div:last-child {
         flex: 7;
     }
+
     .set_width {
         margin-left: 10px;
+
         .icon__before {
             background-color: #e7ecf0;
             border-radius: 0px 5px 5px 0px;

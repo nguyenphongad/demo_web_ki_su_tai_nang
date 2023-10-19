@@ -15,9 +15,21 @@ a {
     text-decoration: none
 }
 
+.heading-4 {
+    font-size: 25px;
+    font-weight: 500;
+    color: $color_gray-500;
+    padding: 10px 20px;
+}
+
 
 @import "component";
 @import "pages";
+@import "pageHome";
 @import "pageNews";
 
-@import "@media/@mediaComponentLogin.scss"
+@import "@media/@mediaComponentLogin.scss";
+
+.text-danger {
+    color: $color_danger !important;
+}

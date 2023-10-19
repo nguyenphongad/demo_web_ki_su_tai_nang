@@ -1,5 +1,5 @@
 //Variables
-$line_color: #E7ECF0;
+
 
 //PageNews
 .pageNews {
@@ -8,9 +8,6 @@ $line_color: #E7ECF0;
 	flex-direction: column;
 }
 
-header {
-	@include heading-4
-}
 
 //NewsItem
 .container__item {
