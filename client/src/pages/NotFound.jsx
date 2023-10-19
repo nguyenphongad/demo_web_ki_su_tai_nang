@@ -1,9 +1,9 @@
 import React from 'react'
 
-const LayoutNotFound = () => {
+const NotFound = () => {
     return (
         <div>Not Found</div>
     )
 }
 
-export default LayoutNotFound
+export default NotFound

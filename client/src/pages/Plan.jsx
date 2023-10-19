@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PlanProgress = () => {
+const Plan = () => {
     return (
         <div>PlanProgress</div>
     )
 }
 
-export default PlanProgress
+export default Plan

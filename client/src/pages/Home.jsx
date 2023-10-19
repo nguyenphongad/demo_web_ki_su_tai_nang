@@ -1,10 +1,10 @@
 import React from 'react'
-import LayoutInfo from '../../components/ComponentHome/LayoutInfo'
-import LayoutChart from '../../components/ComponentHome/LayoutChart'
-import avatar from '../../assets/avatar.png'
-import LayoutTable from '../../components/ComponentHome/LayoutTable'
+import LayoutInfo from '../components/ComponentHome/LayoutInfo'
+import LayoutChart from '../components/ComponentHome/LayoutChart'
+import avatar from '../assets/avatar.png'
+import LayoutTable from '../components/ComponentHome/LayoutTable'
 
-const PageHome = () => {
+const Home = () => {
 	const DATA_INFO = {
 		image: avatar,
 		mssv: 21000991,
@@ -72,4 +72,4 @@ const PageHome = () => {
 	)
 }
 
-export default PageHome
+export default Home

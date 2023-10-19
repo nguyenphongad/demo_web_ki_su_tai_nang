@@ -1,21 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { NewsItem } from '../../components/ComponentNews/NewsItem'
-import axios from 'axios'
-const PageNews = () => {
-	// const [data, setData] = useState([])
-	// useEffect(() => {
-	// 	fetchData()
-	// }, [])
-
-	// const fetchData = async () => {
-	// 	try {
-	// 		const response = await axios.get('LINK')
-	// 		setData(response.data)
-	// 		console.log(response.data)
-	// 	} catch (error) {
-	// 		console.error('Error fetching data:', error)
-	// 	}
-	// }
+import React from 'react'
+import { NewsItem } from '../components/ComponentNews/NewsItem'
+const News = () => {
 	const ARRAY_NEWS = [
 		{
 			time: '2023-09-22T12:34:56Z',
@@ -60,4 +45,4 @@ const PageNews = () => {
 	)
 }
 
-export default PageNews
+export default News

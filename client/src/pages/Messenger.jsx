@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PageMessenger = () => {
+const Messenger = () => {
     return (
         <div>PageMessenger</div>
     )
 }
 
-export default PageMessenger
+export default Messenger

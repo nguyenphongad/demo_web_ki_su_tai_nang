@@ -1,10 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
-import LogoIUH from '../../assets/logo_iuh.png';
-import ImageIntro from '../../assets/image_loading_intro.png'
-import FormLogin from './FormLogin/FormLogin';
+import React, { useContext } from 'react'
+import LogoIUH from '../assets/logo_iuh.png';
+import ImageIntro from '../assets/image_loading_intro.png'
+import FormLogin from '../components/FormLogin/FormLogin';
+
 import { ContextFromWindowResize } from '../../components/ComponentWindow/RenderGetSizeWindow';
 
-const LayoutLogin = () => {
+const Login = () => {
 
     const getSizeWidthWindow = useContext(ContextFromWindowResize);
     const sizeWidth = getSizeWidthWindow.getWidthWindow;
@@ -41,4 +42,4 @@ const LayoutLogin = () => {
     )
 }
 
-export default LayoutLogin
+export default Login

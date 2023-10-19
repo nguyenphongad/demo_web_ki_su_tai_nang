@@ -1,5 +1,5 @@
 import React from 'react'
-import ComponentInput from '../ComponentForm/ComponentInput'
+import ComponentInput from '../ComponentForm/ComponentInput';
 import { RiAccountCircleFill } from 'react-icons/ri'
 import { BiSolidLock } from 'react-icons/bi'
 import { MdOutlineSettingsBackupRestore } from 'react-icons/md'

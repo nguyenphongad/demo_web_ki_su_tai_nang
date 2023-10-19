@@ -1,9 +1,9 @@
 import React from 'react'
 
-const DegressCertificates = () => {
+const Degress = () => {
     return (
         <div>DegressCertificates</div>
     )
 }
 
-export default DegressCertificates
+export default Degress

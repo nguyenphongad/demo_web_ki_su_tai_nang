@@ -50,18 +50,19 @@
 .container__menu {
     width: 260px;
     height: 100vh;
-    // background-color: #fcfcfc;
+    background-color: #fff;
     margin-top: 60px;
     border-right: 1px solid #b6b6b6;
     position: fixed;
     left: 0px;
+    z-index: 9999;
 
     .wrap__menu {
-
-        // padding: 20px 0px;
+        padding: 15px 0px;
         .flex__box {
             display: flex;
             flex-direction: column;
+            gap: 10px;
 
             .item_menu_a {
                 justify-content: left;

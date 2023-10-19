@@ -32,6 +32,8 @@ $avatar_size: 185px;
 .container__info {
 	background-color: $color_white;
 	padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(194, 193, 193);
 }
 
 
@@ -134,6 +136,8 @@ $avatar_size: 185px;
 .container__center {
 	background-color: $color_white;
 	padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(194, 193, 193);
 
 	.container__table {
 		width: 100%;

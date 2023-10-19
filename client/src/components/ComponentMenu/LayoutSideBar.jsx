@@ -12,14 +12,14 @@ const LayoutSideBar = () => {
     const ARRAY_LIST_MENU = [
         {
             id: 0,
-            name_menu: "Trang chủ",
+            name_menu: "Tổng Quan",
             icon_before: <BiHomeSmile />,
             to_link: "/",
             submenu: false,
         },
         {
             id: 1,
-            name_menu: "Tin tức",
+            name_menu: "Tin Tức",
             icon_before: <HiOutlineNewspaper />,
             to_link: "/news",
             submenu: false,
@@ -32,7 +32,7 @@ const LayoutSideBar = () => {
         },
         {
             id: 3,
-            name_menu: "Học tập",
+            name_menu: "Chỉ Tiêu",
             icon_before: <BiBookBookmark />,
             submenu: true,
             // to_link:"/plan-progress",
@@ -41,19 +41,19 @@ const LayoutSideBar = () => {
                     id: 0,
                     sub_name_menu: "Tiến độ kế hoạch",
                     sub_icon_before: "?",
-                    sub_to_link: "/plan-progress"
+                    sub_to_link: "/plan"
                 },
                 {
                     id: 1,
                     sub_name_menu: "Bằng cấp và chứng chỉ",
                     sub_icon_before: "?",
-                    sub_to_link: "/degress-certificates",
+                    sub_to_link: "/degress",
                 },
                 {
                     id: 2,
                     sub_name_menu: "Quá trình đào tạo",
                     sub_icon_before: "?",
-                    sub_to_link: "/traning-process",
+                    sub_to_link: "/traning",
                 },
                 {
                     id: 3,
@@ -74,19 +74,19 @@ const LayoutSideBar = () => {
                     id: 0,
                     sub_name_menu: "Tiến độ kế hoạch",
                     sub_icon_before: "?",
-                    sub_to_link: "/plan-progress"
+                    sub_to_link: "/plan"
                 },
                 {
                     id: 1,
                     sub_name_menu: "Bằng cấp và chứng chỉ",
                     sub_icon_before: "?",
-                    sub_to_link: "/degress-certificates",
+                    sub_to_link: "/degress",
                 },
                 {
                     id: 2,
                     sub_name_menu: "Quá trình đào tạo",
                     sub_icon_before: "?",
-                    sub_to_link: "/traning-process",
+                    sub_to_link: "/traning",
                 },
                 {
                     id: 3,
@@ -98,7 +98,7 @@ const LayoutSideBar = () => {
                     id: 4,
                     sub_name_menu: "Lập kế hoạch học tập",
                     sub_icon_before: "?",
-                    sub_to_link: "/study-plan",
+                    sub_to_link: "/study",
                 },
             ]
         },
