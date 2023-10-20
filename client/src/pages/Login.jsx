@@ -3,7 +3,7 @@ import LogoIUH from '../assets/logo_iuh.png';
 import ImageIntro from '../assets/image_loading_intro.png'
 import FormLogin from '../components/FormLogin/FormLogin';
 
-import { ContextFromWindowResize } from '../../components/ComponentWindow/RenderGetSizeWindow';
+import { ContextFromWindowResize } from '../components/ComponentWindow/RenderGetSizeWindow';
 
 const Login = () => {
 

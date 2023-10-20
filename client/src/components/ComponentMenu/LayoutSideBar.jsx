@@ -26,7 +26,7 @@ const LayoutSideBar = () => {
         },
         {
             id: 2,
-            name_menu: "Tin nhắn",
+            name_menu: "Tin Nhắn",
             icon_before: <BiMessageSquareDetail />,
             to_link: "/messenger",
         },
@@ -57,7 +57,7 @@ const LayoutSideBar = () => {
                 },
                 {
                     id: 3,
-                    sub_name_menu: "Thành tích",
+                    sub_name_menu: "Thành Tích",
                     sub_icon_before: "?",
                     sub_to_link: "/achievements",
                 },
@@ -65,7 +65,7 @@ const LayoutSideBar = () => {
         },
         {
             id: 4,
-            name_menu: "Đối nội",
+            name_menu: "Hoạt Động",
             icon_before: <MdLightbulbOutline />,
             submenu: true,
             // to_link:"/plan-progress",
