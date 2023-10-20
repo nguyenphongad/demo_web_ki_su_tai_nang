@@ -6,7 +6,6 @@ const MainItem = ({ data }) => {
 	const strStartDate = startDate.toLocaleDateString()
 	const strEndDate = endDate.toLocaleDateString()
 	const timeDifference = endDate.getTime() - new Date().getTime()
-	console.log(timeDifference)
 	const timeRemain = Math.ceil(timeDifference / (24 * 60 * 60 * 1000))
 	return (
 		<tr className="table__line__item">
@@ -24,7 +23,6 @@ const MainItem = ({ data }) => {
 }
 
 const LayoutTable = ({ children }) => {
-	console.log(children)
 	return (
 		<div className="container__table">
 			<header className="heading-4">Lịch trình</header>

@@ -6,6 +6,7 @@ import { BiSolidMessageDetail } from 'react-icons/bi'
 import { LiaFacebookMessenger } from 'react-icons/lia'
 import { BsFillBookmarkCheckFill, BsFillCaretDownFill, BsFillCaretRightFill } from 'react-icons/bs'
 import { MdLightbulbOutline } from 'react-icons/md';
+import Logo_IUH from '../../assets/logo_iuh.png'
 
 const LayoutSideBar = () => {
 
@@ -26,7 +27,7 @@ const LayoutSideBar = () => {
         },
         {
             id: 2,
-            name_menu: "Tin Nhắn",
+            name_menu: "Tin nhắn",
             icon_before: <BiMessageSquareDetail />,
             to_link: "/messenger",
         },
@@ -57,7 +58,7 @@ const LayoutSideBar = () => {
                 },
                 {
                     id: 3,
-                    sub_name_menu: "Thành Tích",
+                    sub_name_menu: "Thành tích",
                     sub_icon_before: "?",
                     sub_to_link: "/achievements",
                 },
@@ -65,7 +66,7 @@ const LayoutSideBar = () => {
         },
         {
             id: 4,
-            name_menu: "Hoạt Động",
+            name_menu: "Đối nội",
             icon_before: <MdLightbulbOutline />,
             submenu: true,
             // to_link:"/plan-progress",
@@ -123,6 +124,7 @@ const LayoutSideBar = () => {
         refBoxSubs.forEach((ref, index) => {
             if (ref.current && subMenu[index]) {
                 const newHeightBoxSub = `${ref.current.scrollHeight}px`;
+
                 if (heightBoxSub[index] !== newHeightBoxSub) {
                     const newHeightBoxSubArray = [...heightBoxSub];
                     newHeightBoxSubArray[index] = newHeightBoxSub;
@@ -134,7 +136,7 @@ const LayoutSideBar = () => {
 
     const renderArrMenu = ARRAY_LIST_MENU.map((item) => {
         return (
-            <>
+            <React.Fragment key={item.id}>
                 {
                     item.submenu ?
                         <div
@@ -146,7 +148,7 @@ const LayoutSideBar = () => {
                                 {item.icon_before}
                                 {item.name_menu}
                             </span>
-                            <div className={`icon_active_sub ${ subMenu[item.id] ? "active_icon" : "unactive_icon"}`}>
+                            <div className={`icon_active_sub ${subMenu[item.id] ? "active_icon" : "unactive_icon"}`}>
                                 <BsFillCaretRightFill />
 
                             </div>
@@ -180,8 +182,9 @@ const LayoutSideBar = () => {
                                             className="sub_menu_item"
                                             to={item_sub.sub_to_link}
                                             title={item_sub.sub_name_menu}>
+
                                             {item_sub.sub_name_menu}
-                                            
+
                                         </NavLink>
                                     )
                                 })
@@ -190,13 +193,18 @@ const LayoutSideBar = () => {
 
                         : undefined
                 }
-            </>
+            </React.Fragment>
         )
     })
 
 
     return (
         <div className='container__menu'>
+            <div className='img__logo'>
+                <a href="/">
+                    <img src={Logo_IUH} alt="logo_iuh" />
+                </a>
+            </div>
             <div className="wrap__menu">
                 <div className="flex__box">
                     {renderArrMenu}

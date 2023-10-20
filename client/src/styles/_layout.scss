@@ -1,4 +1,9 @@
-.main {
-    padding-top: 60px;
-    padding-left: 260px;
+.wrap__layout {
+    display: flex;
+    .main__body {
+        width: 100%;
+        padding-left: 260px;
+        .main {
+        }
+    }
 }
